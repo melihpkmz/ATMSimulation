@@ -1,0 +1,30 @@
+﻿<Window x:Class="ATMSimulation.dolarProcess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMSimulation"
+        mc:Ignorable="d"
+        Title="dolarProcess" Height="700" Width="1050" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="colorful-abstract-background_1207-180.jpg" Stretch="Fill"/>
+
+        <Label Content="Hangi tür euro işlemi yapmak istiyorsunuz:" HorizontalAlignment="Left" Margin="129,120,0,0" VerticalAlignment="Top" Width="687" Height="67" FontSize="36"/>
+        <Image Margin="884,559,10,10" Source="Maze_Logo_Retina.jpg" Stretch="Fill"/>
+        <Image Margin="315,337,165,135" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.654"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="355,192,170,294" Source="3260.png" Stretch="Fill"/>
+        <Button Content="Alış" HorizontalAlignment="Left" Margin="478,221,0,0" VerticalAlignment="Top" Width="338" Click="Button_Click" Height="115
+                " FontSize="36"/>
+        <Button Content="Satış" HorizontalAlignment="Left" Margin="478,375,0,0" VerticalAlignment="Top" Width="338" Click="Button_Click_1" Height="115" FontSize="36"/>
+
+    </Grid>
+</Window>

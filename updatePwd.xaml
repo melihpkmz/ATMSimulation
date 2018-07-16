@@ -1,0 +1,32 @@
+﻿<Window x:Class="ATMSimulation.updatePwd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMSimulation"
+        mc:Ignorable="d"
+        Title="updatePwd" Height="700" Width="1050" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="colorful-abstract-background_1207-180.jpg" Stretch="Fill"/>
+
+        <Label Content="Eski Şifrenizi Giriniz:&#xA;" HorizontalAlignment="Left" Margin="291,226,0,0" VerticalAlignment="Top" FontSize="24" Width="227"/>
+        <Label Content="Yeni Şifrenizi Giriniz:" HorizontalAlignment="Left" Margin="291,322,0,0" VerticalAlignment="Top" Height="54" Width="259" FontSize="24"/>
+        <PasswordBox x:Name="oldPwd" PasswordChar="*" MaxLength="4" HorizontalAlignment="Left" Margin="581,226,0,0" VerticalAlignment="Top" Width="232" Height="50" FontSize="24" KeyDown="keyDown" />
+        <PasswordBox x:Name="newPwd" PasswordChar="*" MaxLength="4" HorizontalAlignment="Left" Margin="581,322,0,0" VerticalAlignment="Top" Width="232" Height="54" FontSize="24" KeyDown="keyDown2" />
+        <Image Margin="906,548,10,10" Source="Maze_Logo_Retina.jpg" Stretch="Fill"/>
+        <Image Margin="466,376,136,121" Source="3260.png" Stretch="Fill"/>
+        <Button Content="Güncelle" HorizontalAlignment="Left" Margin="581,413,0,0" VerticalAlignment="Top" Width="297" Click="Button_Click" Height="84" FontSize="36"/>
+        <Image Margin="135,378,484,127" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Ana Menüye Dön" HorizontalAlignment="Left" VerticalAlignment="Top" Width="304" Margin="196,413,0,0" Click="Button_Click_1" Height="84" FontSize="36"/>
+
+    </Grid>
+</Window>

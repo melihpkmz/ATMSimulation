@@ -1,0 +1,22 @@
+﻿<Window x:Class="ATMSimulation.exchangeRates"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMSimulation"
+        mc:Ignorable="d"
+        Title="exchangeRates" Height="700" Width="1050" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Margin="10,0,0,0" Source="colorful-abstract-background_1207-180.jpg" Stretch="Fill"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="48" Margin="472,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontSize="24" TextAlignment="Center" IsReadOnlyCaretVisible="True" IsReadOnly="True"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="48" Margin="472,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontSize="24" TextAlignment="Center" IsReadOnlyCaretVisible="True" IsReadOnly="True"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="48" Margin="472,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" FontSize="24" TextAlignment="Center" IsReadOnlyCaretVisible="True" IsReadOnly="True"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="48" Margin="472,332,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" TextAlignment="Center" FontSize="24" IsReadOnlyCaretVisible="True" IsReadOnly="True"/>
+        <Image Margin="911,558,10,10" Source="Maze_Logo_Retina.jpg" Stretch="Fill"/>
+        <Label Content="USD/TRY" HorizontalAlignment="Left" Margin="266,44,0,0" VerticalAlignment="Top" Width="110" FontSize="24"/>
+        <Label Content="EUR/TRY" HorizontalAlignment="Left" Margin="266,136,0,0" VerticalAlignment="Top" Width="110" FontSize="24"/>
+        <Label Content="GBP/TRY" HorizontalAlignment="Left" Margin="266,236,0,0" VerticalAlignment="Top" Width="110" FontSize="24"/>
+        <Label Content="SEK/TRY" HorizontalAlignment="Left" Margin="266,332,0,0" VerticalAlignment="Top" Width="110" FontSize="24"/>
+        <Button Content="ANA MENÜYE DÖN&#xA;" HorizontalAlignment="Left" Margin="472,453,0,0" VerticalAlignment="Top" Width="431" Height="85" Click="Button_Click" FontSize="36"/>
+    </Grid>
+</Window>

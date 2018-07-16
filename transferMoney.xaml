@@ -1,0 +1,32 @@
+﻿<Window x:Class="ATMSimulation.transferMoney"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMSimulation"
+        mc:Ignorable="d"
+        Title="transferMoney" Height="700" Width="1050" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="colorful-abstract-background_1207-180.jpg" Stretch="Fill"/>
+
+        <Label Content="Ne kadar para transfer etmek istiyorsunuz:" HorizontalAlignment="Left" Margin="140,347,0,0" VerticalAlignment="Top" Width="465" FontSize="24"/>
+        <Label Content="Paranın transfer edileceği hesap numarasını giriniz:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,251,0,0" Width="558" FontSize="24"/>
+        <TextBox x:Name="textBox1" MaxLength ="4" HorizontalAlignment="Left" Height="58" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Margin="610,251,0,0" FontSize="24" KeyDown="keyDown" />
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="58" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Margin="610,347,0,0" FontSize="24" KeyDown="keyDown2"/>
+        <Image Margin="926,574,10,5" Source="Maze_Logo_Retina.jpg" Stretch="Fill"/>
+        <Image Margin="208,414,410,78" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Ana Menüye Dön" HorizontalAlignment="Left" Margin="251,453,0,0" VerticalAlignment="Top" Width="295" Click="Button_Click" Height="78" FontSize="36"/>
+        <Image Margin="507,410,93,78" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Transferi Onayla" HorizontalAlignment="Left" Margin="610,453,0,0" VerticalAlignment="Top" Width="295" Click="Button_Click_1" Height="78" FontSize="36"/>
+
+    </Grid>
+</Window>

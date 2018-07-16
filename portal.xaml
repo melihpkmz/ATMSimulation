@@ -1,0 +1,67 @@
+﻿<Window x:Class="ATMSimulation.portal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATMSimulation"
+        mc:Ignorable="d"
+        Title="portal" Height="700" Width="1050" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="colorful-abstract-background_1207-180.jpg" Stretch="Fill"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="41" Margin="366,130,0,0" TextWrapping="Wrap" Text="&#xA;" VerticalAlignment="Top" Width="192" FontSize="24" IsReadOnlyCaretVisible="True" IsReadOnly="True"   />
+        <Image Margin="882,556,10,10" Source="Maze_Logo_Retina.jpg" Stretch="Fill"/>
+        <Image Margin="520,196,74,325" Source="3260.png" Stretch="Fill"/>
+        <Image Margin="474,90,74,442" Source="3260.png" Stretch="Fill"/>
+        <Image Margin="520,310,74,215" Source="3260.png" Stretch="Fill"/>
+        <Button x:Name="button4" Content="Döviz Kurları" HorizontalAlignment="Left" Margin="634,116,0,0" VerticalAlignment="Top" Width="300" Click="Button_Click_4" Height="75" FontSize="22"/>
+        <Image Margin="83,321,514,217" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="button3" Content="Para Çekme" HorizontalAlignment="Left" Margin="119,344,0,0" VerticalAlignment="Top" Width="297" Click="Button_Click_3" Height="74" FontSize="22"/>
+        <Image Margin="59,93,426,451" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="82,195,519,326" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="button1" Content="Para Transferi" HorizontalAlignment="Left" Margin="119,232,0,0" VerticalAlignment="Top" Width="297" Click="Button_Click_1" Height="73" FontSize="22"/>
+        <Image Margin="82,429,519,97" Source="3260.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Hesaptaki Para Miktarınız:" HorizontalAlignment="Left" Margin="97,130,0,0" VerticalAlignment="Top" Height="41" Width="269" FontSize="22"/>
+        <Image Margin="520,423,74,92" Source="3260.png" Stretch="Fill"/>
+        <Button x:Name="button7" Content="Çıkış Yap" HorizontalAlignment="Left" Margin="634,454,0,0" VerticalAlignment="Top" Width="300" Click="Button_Click_6" Height="78" FontSize="22"/>
+        <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="438,71,-246,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="button2" Content="Para Yatırma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="297" Margin="119,454,0,0" Click="Button_Click_2" Height="78" FontSize="22"/>
+        <Button x:Name="button5" Content="Döviz İşlemleri" HorizontalAlignment="Left" Margin="634,232,0,0" VerticalAlignment="Top" Width="300" Click="Button_Click_5" Height="73" FontSize="22"/>
+        <Button x:Name="button6" Content="Şifre Güncelle" HorizontalAlignment="Left" Margin="634,344,0,0" VerticalAlignment="Top" Width="300" Click="Button_Click" Height="74" FontSize="22"/>
+    </Grid>
+</Window>
